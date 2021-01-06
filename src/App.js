@@ -1,9 +1,10 @@
-import './App.css';
+import './css/style.css';
+import MainContent from '../src/components/_mainpage';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Hello</h1>
+    <div className="app">
+     <MainContent />
     </div>
   );
 }

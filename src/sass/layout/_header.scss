@@ -1,0 +1,12 @@
+@import "../abstracts/mixins";
+@import "../base/utilities";
+
+.header {
+  height: 100%;
+  border: 1px solid black;
+  position: relative;
+
+  &__logo {
+    @include u-center-HV;
+  }
+}
