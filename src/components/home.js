@@ -19,15 +19,49 @@ const Home = () => {
                    <img className="home__images " src={img5} alt="puppy"/>
                 </div>
             </div>
-            <div className="home__msg">
-                <h3>Thank you so much for visiting our site!</h3>
-                <h3>We hope you find your perfect puppy with us!</h3>
+            <div className="home__msg u-margin-TB-3 ">
+                <h3 className="home__msg-1">Thank you so much for visiting our site!</h3>
+                <h3 className="home__msg-1">We hope you find your perfect puppy with us!</h3>
             </div>
-            <div className="home__singleImg">
-            <img className="home__images " src={img3} alt="puppy"/>
-            <img className="home__images " src={img4} alt="puppy"/>
-            <img className="home__images " src={img5} alt="puppy"/>
+
+            {/* single images front and back card  */}
+            <div className="row">
+                {/* col-1  */}
+                <div className="row--1">
+                    <div className="card">
+                        <div className="card__side card__side--front">
+                            <h2>text front</h2>
+                        </div>
+                        <div className="card__side card__side--back">
+                            <h2>text back</h2>
+                        </div>
+                    </div>
+                </div>
+                {/* col-2  */}
+                <div className="row--1">
+                    <div className="card">
+                        <div className="card__side card__side--front">
+                            <h2>text front</h2>
+                        </div>
+                        <div className="card__side card__side--back">
+                            <h2>text back</h2>
+                        </div>
+                    </div>
+                </div>
+                {/* col-3  */}
+                <div className="row--1">
+                    <div className="card">
+                        <div className="card__side card__side--front">
+                            <h2>text front</h2>
+                        </div>
+                        <div className="card__side card__side--back">
+                            <h2>text back</h2>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     )
 }

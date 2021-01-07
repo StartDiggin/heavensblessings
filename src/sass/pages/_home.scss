@@ -1,7 +1,6 @@
 @import "../abstracts/variables";
 
 .home {
-  height: 90vh;
   background-color: $BGC-light;
   position: relative;
 
@@ -26,5 +25,63 @@
     &--active {
       display: inline-block;
     }
+  }
+
+  &__msg-1 {
+    font-size: 1.6rem;
+  }
+}
+
+.row {
+  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 50rem;
+  justify-content: space-between;
+  gap: 10rem;
+  margin: 0 5rem 3rem 5rem;
+  // position: relative;
+
+  // &--1 {
+  //   border: 1px solid black;
+  // }
+}
+
+.card {
+  perspective: 150rem;
+  -mox-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+  //   width: 20rem;
+
+  &__side {
+    background-color: orangered;
+    color: #fff;
+    font-size: 2rem;
+
+    height: 50rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+
+    &--front {
+      background-color: green;
+    }
+
+    &--back {
+      background-color: orangered;
+      transform: rotateY(180deg);
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
   }
 }
