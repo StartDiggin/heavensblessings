@@ -19,6 +19,24 @@ body {
   padding: 3rem;
 }
 
+.heading-primary {
+  font-size: 3.5rem;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  margin-top: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  margin-top: 1rem;
+  letter-spacing: 0.2rem;
+}
+
 .u-center-text {
   text-align: center;
 }
@@ -49,6 +67,10 @@ body {
 
 .u-margin-top-3 {
   margin-top: 3rem;
+}
+
+.u-margin-top-2 {
+  margin-top: 2rem;
 }
 
 .u-padding-rl-3 {
@@ -85,6 +107,10 @@ body {
 
 .u-margin-top-3 {
   margin-top: 3rem;
+}
+
+.u-margin-top-2 {
+  margin-top: 2rem;
 }
 
 .u-padding-rl-3 {
@@ -108,27 +134,33 @@ body {
 .navigation {
   font-size: 1.6rem;
   height: 100%;
-  border: 1px solid red;
   display: -ms-grid;
   display: grid;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid blue;
+}
+
+.navigation__img {
+  height: 3rem;
+  width: 10rem;
 }
 
 .navigation__link {
   text-decoration: none;
+  font-size: 2rem;
+  color: #222121;
+  display: block;
 }
 
-.navigation__link:not(:last-child) {
-  margin: 0 1rem;
-}
-
-.navigation__menu {
-  margin: 0 2rem 2rem 0;
+.navigation__links {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 3rem;
 }
 
 .app {
@@ -136,13 +168,48 @@ body {
   width: 100%;
 }
 
+.home {
+  height: 90vh;
+  background-color: #fdfdfd;
+  position: relative;
+}
+
+.home__container {
+  border: 1px solid pink;
+  background-color: #bb7474;
+}
+
+.home__carousel {
+  border: 1px solid orange;
+  height: 45rem;
+  width: 45rem;
+  margin: 2rem auto;
+}
+
+.home__images {
+  height: 45rem;
+  width: 45rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
+}
+
+.home__images--active {
+  display: inline-block;
+}
+
 .mainContent {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (minmax(10rem, 1fr))[3];
-      grid-template-rows: repeat(3, minmax(10rem, 1fr));
+  -ms-grid-rows: 15rem 1fr 10rem;
+      grid-template-rows: 15rem 1fr 10rem;
   -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.mainContent__footer {
+  grid-column: 1/-1;
+  border: 1px solid orange;
 }
 
 .mainContent__header {
@@ -153,7 +220,7 @@ body {
 
 .mainContent__navigation {
   grid-column: 3 / -1;
-  border: 1px solid orange;
+  border: 1px solid yellow;
 }
 
 .mainContent__content {

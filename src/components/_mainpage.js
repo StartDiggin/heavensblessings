@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+import Footer from './_footer';
 import Header from './_header';
 import Navigation from './_navigation';
+
 
 // Pages 
 import Home from './home';
@@ -27,6 +29,9 @@ const MainContent = () => {
                         <Route path="/newpuppies" component={NewPups}  />
                         <Route path="/contact" component={Contact}  />
                     </Switch>
+                </div>
+                <div className="mainContent__footer">
+                    <Footer />
                 </div>
             </BrowserRouter>
         </div>
