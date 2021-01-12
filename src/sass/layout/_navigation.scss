@@ -1,17 +1,23 @@
 @import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 .navigation {
   font-size: 1.6rem;
   height: 100%;
   display: grid;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-
-  border: 1px solid blue;
 
   &__img {
     height: 3rem;
     width: 10rem;
+
+    @include respond(phoneSm) {
+      display: none;
+    }
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__link {
@@ -22,17 +28,18 @@
   }
 
   &__links {
-    // border: 1px solid green;
     list-style-type: none;
     display: inline-block;
     margin: 0 3rem;
-  }
-
-  // &__links:not(:last-child) {
-  //   margin: 0 3rem;
-  // }
-
-  &__menu {
-    // margin: 0 4rem 2rem 0;
+    @include respond(phoneSm) {
+      display: block;
+    }
+    @include respond(phone) {
+      margin: 0 1rem;
+      display: block;
+    }
+    @include respond(tab-port) {
+      margin: 0 2rem;
+    }
   }
 }

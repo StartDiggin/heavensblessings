@@ -3,10 +3,17 @@
 
 .header {
   height: 15rem;
-  border: 1px solid black;
   position: relative;
 
   &__logo {
-    @include u-center-HV;
+    height: 14rem;
+    width: 16rem;
+
+    &__img {
+      height: 12rem;
+      width: 13rem;
+      object-fit: cover;
+      @include u-center-HV;
+    }
   }
 }

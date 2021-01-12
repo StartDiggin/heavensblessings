@@ -1,3 +1,5 @@
+@import "../abstracts/mixins";
+
 *,
 *::before,
 *::after {
@@ -8,7 +10,23 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 62.5%; // 10px 10/16 = 0.625
+
+  @include respond(phoneSm) {
+    font-size: 37.5%; // 6px 6/16 = 0.375
+  }
+  @include respond(phone) {
+    font-size: 43.75%; // 7px 7/16 = 0.4375
+  }
+  @include respond(tab-port) {
+    font-size: 50%; // 8px 8/16 = 0.5
+  }
+  @include respond(tab-land) {
+    font-size: 56.25%; // 9px 9/16 = 0.5625
+  }
+  @include respond(big-desk) {
+    font-size: 75%; // 12px 12/16 = 0.75
+  }
 }
 
 body {

@@ -1,4 +1,6 @@
 // Fonts
+$heading-font: "Reenie Beanie", cursive;
+$sub-font: "Playfair Display", serif;
 
 // Colors
 $text-black: rgb(34, 33, 33);
@@ -20,13 +22,14 @@ $opacity-2: 80%;
 $opacity-3: 60%;
 
 // Gradients
-
 // Box Shadows
+$img-arrows: 0 1rem 3rem rgba(#000, 0.1);
 
 // Button Shadows
 
 // Light blue
 $color-1: hsla(194, 100%, 81%, $opacity-1);
+// #b9dfeb
 $color-2: hsla(194, 56%, 82%, $opacity-1);
 
 // Light green
