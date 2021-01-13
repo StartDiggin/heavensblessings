@@ -340,6 +340,7 @@ $breakpoints
   height: 45rem;
   width: 45rem;
   margin: 2rem auto;
+  position: relative;
 }
 
 .home__images {
@@ -376,11 +377,11 @@ $breakpoints
 }
 
 .arrows--prev {
-  left: 29%;
+  left: -10rem;
 }
 
 .arrows--next {
-  right: 20%;
+  left: 54rem;
 }
 
 .row {

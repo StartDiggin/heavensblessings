@@ -1,70 +1,84 @@
 import React from 'react';
 
-import img1 from "../images/slideshow/img1.jpeg";
-import img2 from "../images/slideshow/img2.jpeg";
-import img3 from "../images/slideshow/img3.jpeg";
-import img4 from "../images/slideshow/img4.jpeg";
-import img5 from "../images/slideshow/img5.jpeg";
+import images from '../images/images';
 import prev from "../images/slideshow/prev.svg";
 import next from "../images/slideshow/next.svg";
 
 
-
+// testing 
+import img1 from "../images/slideshow/img1.jpeg";
+import img2 from "../images/slideshow/img2.jpeg";
+// import img3 from "../images/slideshow/img3.jpeg";
+// import img4 from "../images/slideshow/img4.jpeg";
+import img5 from "../images/slideshow/img5.jpeg";
 
 
 
 
 class Home extends React.Component {
     state={
-        imgs:[]
+        imgs:[],
+        img1:[],
+        img2:[],
+        img3:[]
     }
 
 
     componentDidMount = () => {
-        let images = Array.from(document.querySelectorAll('.home__images'));
-        this.setState({
-            imgs: images
-        })
-    }
-
-    onClick = (n) => {
-        let imgs = this.state.imgs;
-        let newArr = [];
-
-        for(let i=4; i>0-1; i--){
-            newArr.push(imgs[i]);
+        let imgs = images
+        for(let i=0; i<3; i++){
+            this.setState({
+                imgs: images,
+                img1: imgs[0],
+                img2: imgs[1],
+                img3: imgs[2]
+            })
         }
-        this.setState({
-            imgs:newArr
-        })
     }
 
-    onClick2 = () => {
-        console.log(this.state.imgs)
+    onClick = (n) => {  
+        // let images = this.state.imgs;
+        // for(let i=0; i<images.length; i++){
+        //     console.log(images[i])
+        // }
     }
 
-// document.getElementbyID("0").src = "img3"
+    onClick2 = () => {  
+        // let imgs = this.state.imgs
+        let image1 = this.state.img1
+        // for(let i=0; i<imgs.length; i++){
+        //     console.log(imgs)
+        // }
+        console.log(image1)
+    }
 
+
+    // {this.state.imgs.map(img => {
+    //     return <img id="1" key={img.id} className="img home__images home__images--active" src={img.img} alt="puppy"/>
+    // })} 
+
+   
     render(){
+        
 
         return(
             <div className="home u-center-text">
                 <h1 className="home__heading heading-primary">Welcome to Heavens Blessings</h1>
                 <div className="home__container">
                     <div className="home__images--prev u-margin-top-2">
-                       <img id="1" className="img img home__images home__images--active" src={img1} alt="puppy"/>
+                        <img id="1" className="img home__images home__images--active" src={img1} alt="puppy"/>
                     </div>
                     <div className="home__carousel">
                        <img id="2" className="img home__images home__images--active" src={img2} alt="puppy"/>
-                       <img id="3" className="img home__images " src={img3} alt="puppy"/>
-                       <img id="4" className="img home__images " src={img4} alt="puppy"/>
+                       {/* <img id="3" className="img home__images " src={img3} alt="puppy"/>
+                       <img id="4" className="img home__images " src={img4} alt="puppy"/> */}
+                        {/* Next and Prev buttons  */}
+                        <img src={prev} className="arrows arrows--prev" onClick={() => this.onClick(-1)} alt="prev"/>
+                        <img src={next} className="arrows arrows--next" onClick={() => this.onClick(1)} alt="next"/>
                     </div>
                     <div className="home__images--next u-margin-top-2">
                        <img id="5" className="img home__images home__images--active" src={img5} alt="puppy"/>
                     </div>
-                     {/* Next and Prev buttons  */}
-                    <img src={prev} className="arrows arrows--prev" onClick={() => this.onClick(-1)} alt="prev"/>
-                    <img src={next} className="arrows arrows--next" onClick={() => this.onClick(1)} alt="next"/>
                 </div>
                 <div className="home__msg u-margin-TB-3 ">
                     <h3 className="home__msg-1">Thank you so much for visiting our site!</h3>
