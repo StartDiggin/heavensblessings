@@ -1,5 +1,6 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
+@import "../base/animations";
 
 .home {
   background-color: $BGC-light;
@@ -18,16 +19,18 @@
     width: 45rem;
     margin: 2rem auto;
     position: relative;
+    transition: opacity 0.8s ease-in-out;
   }
 
   &__images {
     height: 45rem;
     width: 45rem;
     object-fit: cover;
-    display: none;
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out;
 
-    &--active {
-      display: inline-block;
+    &--side {
+      opacity: 0.2;
     }
 
     &--prev,
@@ -43,6 +46,11 @@
     font-weight: 300;
   }
 }
+
+// .fade {
+//   opacity: 1;
+//   @include fade;
+// }
 
 .arrows {
   height: 6rem;

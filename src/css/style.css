@@ -79,6 +79,29 @@ $breakpoints
 - tab-land  
 - big-desk  
 */
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .heading-primary {
   font-family: "Reenie Beanie", cursive;
   font-weight: 300;
@@ -321,6 +344,18 @@ $breakpoints
 - tab-land  
 - big-desk  
 */
+@keyframes fade {
+  0% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .home {
   background-color: #fdfdfd;
   position: relative;
@@ -341,6 +376,8 @@ $breakpoints
   width: 45rem;
   margin: 2rem auto;
   position: relative;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
 }
 
 .home__images {
@@ -348,11 +385,13 @@ $breakpoints
   width: 45rem;
   -o-object-fit: cover;
      object-fit: cover;
-  display: none;
+  display: inline-block;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.home__images--active {
-  display: inline-block;
+.home__images--side {
+  opacity: 0.2;
 }
 
 .home__images--prev, .home__images--next {
