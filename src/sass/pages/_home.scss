@@ -7,7 +7,6 @@
   position: relative;
 
   &__container {
-    border: 1px solid pink;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -47,11 +46,6 @@
   }
 }
 
-// .fade {
-//   opacity: 1;
-//   @include fade;
-// }
-
 .arrows {
   height: 6rem;
   cursor: pointer;
@@ -85,7 +79,7 @@
   height: 50rem;
 
   &__side {
-    background-color: orangered;
+    // background-color: orangered;
     color: #fff;
     font-size: 2rem;
     height: 50rem;
@@ -113,5 +107,23 @@
 
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+
+  // front side styling
+  &__picture {
+    background-size: cover;
+    width: 28rem;
+    height: 26rem;
+    margin: 2rem auto;
+
+    &--1 {
+      background-image: url(../sass/imgs/img6.jpg);
+    }
+    &--2 {
+      background-image: url(../sass/imgs/img17.jpg);
+    }
+    &--3 {
+      background-image: url(../sass/imgs/img23-1.jpg);
+    }
   }
 }

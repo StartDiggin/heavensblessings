@@ -1,18 +1,9 @@
 import React from 'react';
+import Card from './_card';
 
 import images from '../images/images';
 import prev from "../images/slideshow/prev.svg";
 import next from "../images/slideshow/next.svg";
-
-
-// testing 
-// import img1 from "../images/slideshow/img1.jpeg";
-// import img2 from "../images/slideshow/img2.jpeg";
-// import img3 from "../images/slideshow/img3.jpeg";
-// import img4 from "../images/slideshow/img4.jpeg";
-// import img5 from "../images/slideshow/img5.jpeg";
-
-
 
 
 class Home extends React.Component {
@@ -37,9 +28,6 @@ class Home extends React.Component {
         }
         let intervalId = setInterval(() => {
             this.autoSlider()
-            // let imgFade = document.getElementById('2');
-            // imgFade.classList.add('fade')
-            // imgFade.classList.remove('fade')
             document.getElementById('2').style.opacity = "1";
         }, 3000)
         this.setState({
@@ -80,10 +68,7 @@ class Home extends React.Component {
             id2 < 0 ? id2 = 4 : id2 > 4 ? id2 = 0 : id2 = prevState.img2.id - n; 
             id3 < 0 ? id3 = 4 : id3 > 4 ? id3 = 0 : id3 = prevState.img3.id - n; 
             let newImg = prevState.imgs.find(img => img.id === id)
-            // document.getElementById('2').style.opacity = ".2";
             let newImg2 = prevState.imgs.find(img => img.id === id2) // center pic
-            // let imgFade = document.getElementById('2');
-            // imgFade.classList.add('fade')
             let newImg3 = prevState.imgs.find(img => img.id === id3)
             return {
                 img1: newImg,
@@ -110,8 +95,7 @@ class Home extends React.Component {
                        <img id="2" className="home__images" src={this.state.img2.img} alt="puppy"/>
                       
                         {/* Next and Prev buttons  */}
-                        {/* <img src={prev} className="arrows arrows--prev" onClick={() => this.onClick(-1)} alt="prev"/> */}
-                        <img src={prev} className="arrows arrows--prev" onClick={() => this.test()} alt="prev"/>
+                        <img src={prev} className="arrows arrows--prev" onClick={() => this.onClick(-1)} alt="prev"/>
                         <img src={next} className="arrows arrows--next" onClick={() => this.onClick(1)} alt="next"/>
                     </div>
                     <div className="home__images--next u-margin-top-2">
@@ -124,42 +108,7 @@ class Home extends React.Component {
                 </div>
     
                 {/* single images front and back card  */}
-                <div className="row">
-                    {/* col-1  */}
-                    <div className="row--1">
-                        <div className="card">
-                            <div className="card__side card__side--front">
-                                <h2>text front</h2>
-                            </div>
-                            <div className="card__side card__side--back">
-                                <h2>text back</h2>
-                            </div>
-                        </div>
-                    </div>
-                    {/* col-2  */}
-                    <div className="row--1">
-                        <div className="card">
-                            <div className="card__side card__side--front">
-                                <h2>text front</h2>
-                            </div>
-                            <div className="card__side card__side--back">
-                                <h2>text back</h2>
-                            </div>
-                        </div>
-                    </div>
-                    {/* col-3  */}
-                    <div className="row--1">
-                        <div className="card">
-                            <div className="card__side card__side--front">
-                                <h2>text front</h2>
-                            </div>
-                            <div className="card__side card__side--back">
-                                <h2>text back</h2>
-                            </div>
-                        </div>
-                    </div>
-    
-                </div>
+                <Card />
     
             </div>
         )
