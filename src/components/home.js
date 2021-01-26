@@ -102,7 +102,7 @@ class Home extends React.Component {
                        <img id="3" className="home__images home__images--side" src={this.state.img3.img} alt="puppy"/>
                     </div>
                 </div>
-                <div className="home__msg u-margin-TB-3 ">
+                <div className="home__msg u-margin-TB-4 ">
                     <h3 className="home__msg-1">Thank you so much for visiting our site!</h3>
                     <h3 className="home__msg-1">We hope you find your perfect puppy with us!</h3>
                 </div>

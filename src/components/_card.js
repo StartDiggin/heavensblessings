@@ -17,11 +17,15 @@ const Card = () => {
                         <div className="card__picture card__picture--1">
                             &nbsp;
                         </div>
-                        <div className="card__heading">
-                            Heading
-                        </div>
+                        <h4 className="card__heading">
+                            <span className="card__heading-span card__heading-span--2">Samantha</span>
+                        </h4>
                         <div className="card__details">
-                            Details
+                            <ul>
+                                <li>9 weeks</li>
+                                <li>23 Lbs.</li>
+                                <li>Playful</li>
+                            </ul>
                         </div>
                     </div>
                     <div className="card__side card__side--back">
@@ -36,9 +40,9 @@ const Card = () => {
                         <div className="card__picture card__picture--2">
                             &nbsp;
                         </div>
-                        <div className="card__heading">
-                            Heading
-                        </div>
+                        <h4 className="card__heading">
+                            <span className="card__heading-span card__heading-span--1">Ranger</span>
+                        </h4>
                         <div className="card__details">
                             Details
                         </div>
@@ -55,9 +59,9 @@ const Card = () => {
                         <div className="card__picture card__picture--3">
                             &nbsp;
                         </div>
-                        <div className="card__heading">
-                            Heading
-                        </div>
+                        <h4 className="card__heading">
+                            <span className="card__heading-span card__heading-span--1">Shaggy</span> 
+                        </h4>
                         <div className="card__details">
                             Details
                         </div>

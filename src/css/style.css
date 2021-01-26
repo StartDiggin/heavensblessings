@@ -131,6 +131,10 @@ $breakpoints
   margin: 3rem 0;
 }
 
+.u-margin-TB-4 {
+  margin: 4rem 0;
+}
+
 .u-margin-top-3 {
   margin-top: 3rem;
 }
@@ -188,6 +192,10 @@ $breakpoints
 
 .u-margin-TB-3 {
   margin: 3rem 0;
+}
+
+.u-margin-TB-4 {
+  margin: 4rem 0;
 }
 
 .u-margin-top-3 {
@@ -388,7 +396,6 @@ $breakpoints
 }
 
 .row {
-  border: 1px solid blue;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -425,7 +432,7 @@ $breakpoints
 }
 
 .card__side--front {
-  background-color: green;
+  background-color: #9ee8ff;
 }
 
 .card__side--back {
@@ -449,6 +456,8 @@ $breakpoints
   width: 28rem;
   height: 26rem;
   margin: 2rem auto;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .card__picture--1 {
@@ -461,6 +470,52 @@ $breakpoints
 
 .card__picture--3 {
   background-image: url(../sass/imgs/img23-1.jpg);
+}
+
+.card__heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  top: 20rem;
+  right: 5rem;
+}
+
+.card__heading-span {
+  padding: 1rem 1.5rem;
+}
+
+.card__heading-span--1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(191, 242, 115, 0.85)), to(rgba(224, 252, 182, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(191, 242, 115, 0.85), rgba(224, 252, 182, 0.85));
+}
+
+.card__heading-span--2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(249, 144, 177, 0.85)), to(rgba(255, 209, 209, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(249, 144, 177, 0.85), rgba(255, 209, 209, 0.85));
+}
+
+.card__details {
+  padding: 2rem;
+}
+
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  letter-spacing: 0.25rem;
+}
+
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #f990b1;
 }
 
 .mainContent {

@@ -63,7 +63,6 @@
 
 // Card picture rotate
 .row {
-  border: 1px solid blue;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   height: 50rem;
@@ -79,7 +78,6 @@
   height: 50rem;
 
   &__side {
-    // background-color: orangered;
     color: #fff;
     font-size: 2rem;
     height: 50rem;
@@ -92,7 +90,7 @@
     border: 1rem solid $color-8;
 
     &--front {
-      background-color: green;
+      background-color: $color-1;
     }
 
     &--back {
@@ -115,6 +113,8 @@
     width: 28rem;
     height: 26rem;
     margin: 2rem auto;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1 {
       background-image: url(../sass/imgs/img6.jpg);
@@ -124,6 +124,57 @@
     }
     &--3 {
       background-image: url(../sass/imgs/img23-1.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-9;
+    position: absolute;
+    top: 20rem;
+    right: 5rem;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-3, 0.85),
+        rgba($color-4, 0.85)
+      );
+    }
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-5, 0.85),
+        rgba($color-6, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 2rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        letter-spacing: 0.25rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-5;
+        }
+      }
     }
   }
 }
