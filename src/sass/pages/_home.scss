@@ -1,6 +1,7 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
 @import "../base/animations";
+@import "../components/buttons";
 
 .home {
   background-color: $BGC-light;
@@ -71,16 +72,17 @@
   margin: 0 5rem 3rem 5rem;
 }
 
+// Functionality
 .card {
   perspective: 150rem;
   -mox-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 52rem;
 
   &__side {
     color: #fff;
     font-size: 2rem;
-    height: 50rem;
+    height: 52rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -94,7 +96,7 @@
     }
 
     &--back {
-      background-color: orangered;
+      background-color: $color-4;
       transform: rotateY(180deg);
     }
   }
@@ -158,7 +160,7 @@
   }
 
   &__details {
-    padding: 2rem;
+    padding: 1rem;
 
     ul {
       list-style: none;
@@ -167,7 +169,7 @@
 
       li {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 1rem;
         letter-spacing: 0.25rem;
 
@@ -176,5 +178,42 @@
         }
       }
     }
+  }
+
+  // back side styling
+  &__cta {
+    @include u-center-HV;
+    text-align: center;
+  }
+
+  &__breed-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: $color-9;
+  }
+
+  &__breed-name {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $text-black;
+
+    &--1 {
+      font-size: 3.5rem;
+      color: $color-5;
+    }
+
+    &--2 {
+      font-size: 3.5rem;
+      color: $color-1;
+      font-weight: 400;
+    }
+
+    h5 {
+      font-weight: 500;
+    }
+  }
+
+  &__breed-bname {
+    font-size: 2.5rem;
   }
 }

@@ -29,7 +29,16 @@ const Card = () => {
                         </div>
                     </div>
                     <div className="card__side card__side--back">
-                        <h2>text back</h2>
+                         <div className="card__cta">
+                            <div className="card__breed-box">
+                                <p className="card__breed-name--1">Samantha</p>
+                                <p className="card__breed-name">DOB:<h5>01/01/2021</h5></p>
+                                <p className="card__breed-name">Breed:<h5>Aussiedoodle</h5></p>
+                                <p className="card__breed-name">Colors:<h5>Merle / Wavy</h5></p>
+                                <p className="card__breed-name">Parents:<h5>Pixie & Copper</h5></p>
+                            </div>
+                            <a href="/" className="btn btn--pink">Contact Us</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -44,11 +53,24 @@ const Card = () => {
                             <span className="card__heading-span card__heading-span--1">Ranger</span>
                         </h4>
                         <div className="card__details">
-                            Details
+                             <ul>
+                                <li>9 weeks</li>
+                                <li>21 Lbs.</li>
+                                <li>Playful</li>
+                            </ul>
                         </div>
                     </div>
                     <div className="card__side card__side--back">
-                        <h2>text back</h2>
+                         <div className="card__cta">
+                            <div className="card__breed-box">
+                                <p className="card__breed-name--2">Ranger</p>
+                                <p className="card__breed-name">DOB:<h5>01/01/2021</h5></p>
+                                <p className="card__breed-name">Breed:<h5>Aussiedoodle</h5></p>
+                                <p className="card__breed-name">Colors:<h5>Merle / Wavy</h5></p>
+                                <p className="card__breed-name">Parents:<h5>Autumn & Copper</h5></p>
+                            </div>
+                            <a href="/" className="btn btn--blue">Contact Us</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,11 +85,24 @@ const Card = () => {
                             <span className="card__heading-span card__heading-span--1">Shaggy</span> 
                         </h4>
                         <div className="card__details">
-                            Details
+                             <ul>
+                                <li>9 weeks</li>
+                                <li>22 Lbs.</li>
+                                <li>Bashful</li>
+                            </ul>
                         </div>
                     </div>
                     <div className="card__side card__side--back">
-                        <h2>text back</h2>
+                        <div className="card__cta">
+                            <div className="card__breed-box">
+                                <p className="card__breed-name card__breed-name--2">Shaggy</p>
+                                <p className="card__breed-name">DOB:<h5>01/01/2021</h5></p>
+                                <p className="card__breed-name">Breed:<h5>Aussiedoodle</h5></p>
+                                <p className="card__breed-name">Colors:<h5>Phantom & Wavy</h5></p>
+                                <p className="card__breed-name">Parents:<h5>Luna & Copper</h5></p>
+                            </div>
+                            <a href="/" className="btn btn--blue">Contact Us</a>
+                        </div>
                     </div>
                 </div>
             </div>
