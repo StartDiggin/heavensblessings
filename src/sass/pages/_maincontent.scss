@@ -17,4 +17,9 @@
   &__content {
     grid-column: 1/-1;
   }
+
+  &__footer {
+    grid-column: 1/-1;
+    height: 10rem;
+  }
 }

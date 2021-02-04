@@ -106,10 +106,7 @@ class Home extends React.Component {
                     <h3 className="home__msg-1">Thank you so much for visiting our site!</h3>
                     <h3 className="home__msg-1">We hope you find your perfect puppy with us!</h3>
                 </div>
-    
-                {/* single images front and back card  */}
                 <Card />
-    
             </div>
         )
     }

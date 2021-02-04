@@ -22,7 +22,7 @@ const MainContent = () => {
                 <div className="mainContent__navigation">
                     <Navigation />
                 </div>
-                <div className="mainContent__content">
+                <div className="mainContent__content u-margin-bottom-8">
                     <Switch>
                         <Route path="/" component={Home} exact />
                         <Route path="/about" component={About}  />
