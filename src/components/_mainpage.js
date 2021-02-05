@@ -11,6 +11,7 @@ import Home from './home';
 import About from './about';
 import NewPups from './newPups';
 import Contact from './contact';
+import Health from './_health';
 
 const MainContent = () => {
     return(
@@ -28,6 +29,7 @@ const MainContent = () => {
                         <Route path="/about" component={About}  />
                         <Route path="/newpuppies" component={NewPups}  />
                         <Route path="/contact" component={Contact}  />
+                        <Route path="/health" component={Health}  />
                     </Switch>
                 </div>
                 <div className="mainContent__footer">

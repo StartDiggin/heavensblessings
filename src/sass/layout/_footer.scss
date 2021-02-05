@@ -19,8 +19,6 @@
     list-style-type: none;
     margin: 2rem;
     font-size: 2rem;
-    // font-weight: 600;
-    // color: $color-2-5;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 
@@ -30,9 +28,8 @@
   }
 
   &__link:hover {
-    color: $color-1;
-    text-shadow: $text-shd1;
     transform: translateY(-0.5rem);
+    text-shadow: 0 1px 3px $color-1;
   }
   &__link:active {
     transform: translateY(-0.2rem);

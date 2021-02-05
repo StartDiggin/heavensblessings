@@ -315,10 +315,9 @@ $breakpoints
 }
 
 .footer__link:hover {
-  color: #9ee8ff;
-  text-shadow: 1px 1px 1rem #a3eaff;
   -webkit-transform: translateY(-0.5rem);
           transform: translateY(-0.5rem);
+  text-shadow: 0 1px 3px #9ee8ff;
 }
 
 .footer__link:active {
