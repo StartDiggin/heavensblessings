@@ -9,10 +9,13 @@
 
 @import "../components/buttons";
 
+@import "../layout/content";
 @import "../layout/footer";
 @import "../layout/header";
 @import "../layout/navigation";
+@import "../layout/sidebar";
 
+@import "../pages/about";
 @import "../pages/app";
 @import "../pages/home";
 @import "../pages/maincontent";

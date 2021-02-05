@@ -1,0 +1,12 @@
+import React from 'react';
+
+
+const Parents = () => {
+    return(
+        <div className="parents">
+            <h1>Parents</h1>
+        </div>
+    )
+};
+
+export default Parents;

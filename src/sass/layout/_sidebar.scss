@@ -1,0 +1,29 @@
+.sidebar {
+  display: flex;
+  justify-content: center;
+  background-color: $color-1;
+  border-radius: 2rem;
+
+  &__links {
+    list-style-type: none;
+  }
+
+  &__link {
+    font-size: 2rem;
+    cursor: pointer;
+
+    &--1 {
+      position: relative;
+    }
+
+    &--2 {
+      position: absolute;
+      top: 3rem;
+      left: 4rem;
+      width: 6rem;
+      height: 3px;
+      background-color: $color-4;
+      display: inline-block;
+    }
+  }
+}

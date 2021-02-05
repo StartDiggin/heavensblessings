@@ -99,6 +99,14 @@ $breakpoints
   letter-spacing: 0.2rem;
 }
 
+.heading-page {
+  font-size: 6rem;
+  font-family: "Satisfy", cursive;
+  font-weight: 100;
+  letter-spacing: 0.4rem;
+  color: #e0fcb6;
+}
+
 .u-center-text {
   text-align: center;
 }
@@ -206,6 +214,13 @@ $breakpoints
   -webkit-transform: scaleX(1.4) scaleY(1.6);
           transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25rem minmax(30rem, 1fr);
+      grid-template-columns: 25rem minmax(30rem, 1fr);
 }
 
 /*
@@ -485,6 +500,44 @@ $breakpoints
   .navigation__links {
     margin: 0 2rem;
   }
+}
+
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #9ee8ff;
+  border-radius: 2rem;
+}
+
+.sidebar__links {
+  list-style-type: none;
+}
+
+.sidebar__link {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.sidebar__link--1 {
+  position: relative;
+}
+
+.sidebar__link--2 {
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+  width: 6rem;
+  height: 3px;
+  background-color: #e0fcb6;
+  display: inline-block;
+}
+
+.about {
+  border: 1px solid red;
 }
 
 .app {
