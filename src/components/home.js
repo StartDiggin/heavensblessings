@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './_card';
 
-import images from '../images/images';
+import images from '../Data/images';
 import prev from "../images/slideshow/prev.svg";
 import next from "../images/slideshow/next.svg";
 

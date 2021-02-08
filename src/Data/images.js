@@ -1,12 +1,8 @@
-import img1 from './slideshow/img1.jpeg';
-import img2 from './slideshow/img2.jpeg';
-import img3 from './slideshow/img3.jpeg';
-import img4 from './slideshow/img4.jpeg';
-import img5 from './slideshow/img5.jpeg';
-
-
-
-
+import img1 from '../images/slideshow/img1.jpeg';
+import img2 from '../images/slideshow/img2.jpeg';
+import img3 from '../images/slideshow/img3.jpeg';
+import img4 from '../images/slideshow/img4.jpeg';
+import img5 from '../images/slideshow/img5.jpeg';
 
 
 const images = [

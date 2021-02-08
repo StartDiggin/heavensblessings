@@ -537,7 +537,16 @@ $breakpoints
 }
 
 .about {
-  border: 1px solid red;
+  font-family: "Satisfy", cursive;
+}
+
+.about__desc {
+  background-color: #f2f1ca;
+  border-radius: 30rem;
+  width: 90%;
+  margin: 5rem auto;
+  font-size: 2rem;
+  padding: 2rem 4rem;
 }
 
 .app {
@@ -878,5 +887,22 @@ $breakpoints
 .mainContent__footer {
   grid-column: 1/-1;
   height: 10rem;
+}
+
+.newpups {
+  font-family: "Satisfy", cursive;
+}
+
+.newpups__images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  height: 50rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10rem;
+  margin: 0 5rem 3rem 5rem;
 }
 /*# sourceMappingURL=style.css.map */

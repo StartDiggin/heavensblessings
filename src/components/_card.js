@@ -1,9 +1,4 @@
 import React from 'react';
-// import img1 from '../images/cardImgs/img6.jpg';
-// import img2 from '../images/cardImgs/img17.jpg';
-// import img3 from '../images/cardImgs/img23.jpg';
-
-
 
 
 const Card = () => {

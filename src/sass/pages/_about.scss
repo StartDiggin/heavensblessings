@@ -1,7 +1,11 @@
 .about {
-  border: 1px solid red;
-
-  &__heading {
-    // border: 1px solid green;
+  font-family: $sub-font-2;
+  &__desc {
+    background-color: $color-8;
+    border-radius: 30rem;
+    width: 90%;
+    margin: 5rem auto;
+    font-size: 2rem;
+    padding: 2rem 4rem;
   }
 }
