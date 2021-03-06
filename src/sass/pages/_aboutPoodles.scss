@@ -1,0 +1,44 @@
+@import "../abstracts/mixins";
+
+.poodles {
+  width: 75vw;
+  margin: 0 auto;
+  &__container {
+    // width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  &__details {
+    width: 75%;
+    padding: 4rem;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    @include u-center-HV;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-3, 0.85),
+      rgba($color-4, 0.85)
+    );
+  }
+
+  &__weight {
+    grid-column: 1/2;
+    position: relative;
+  }
+
+  &__image {
+    grid-column: 2/3;
+  }
+
+  &__life {
+    grid-column: 3/4;
+    position: relative;
+  }
+
+  &__temper {
+    grid-column: 1 / span 3;
+    border: 1px solid green;
+  }
+}

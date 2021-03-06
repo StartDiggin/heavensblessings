@@ -1,13 +1,27 @@
 .newpups {
   font-family: $sub-font-2;
-  // background-color: $color-8;
 
   &__images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 50rem;
     justify-content: space-between;
     gap: 10rem;
     margin: 0 5rem 3rem 5rem;
+  }
+
+  &__img {
+    margin-top: 1rem;
+    width: 26rem;
+    height: 24rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+  &__heading-span--default {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-1, 0.85),
+      rgba($color-5, 0.85)
+    );
   }
 }

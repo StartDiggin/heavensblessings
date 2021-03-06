@@ -1,4 +1,8 @@
 .content {
   display: grid;
   grid-template-columns: 25rem minmax(30rem, 1fr);
+
+  &__container {
+    height: auto;
+  }
 }
