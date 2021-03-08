@@ -1,0 +1,14 @@
+.litters {
+  width: 75vw;
+  margin: 0 auto;
+
+  &__container {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+
+    &__image:nth-child(odd) {
+      background: red;
+    }
+  }
+}

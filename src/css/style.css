@@ -582,14 +582,14 @@ $breakpoints
 
 .poodles__details {
   width: 75%;
-  padding: 4rem;
-  border-radius: 3rem;
-  font-size: 1.4rem;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  border-radius: 3rem;
+  padding: 4rem;
+  font-size: 1.4rem;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(191, 242, 115, 0.85)), to(rgba(224, 252, 182, 0.85)));
   background-image: linear-gradient(to right bottom, rgba(191, 242, 115, 0.85), rgba(224, 252, 182, 0.85));
 }
@@ -618,7 +618,11 @@ $breakpoints
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
-  border: 1px solid green;
+  border-radius: 3rem;
+  padding: 4rem;
+  font-size: 1.4rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(191, 242, 115, 0.85)), to(rgba(224, 252, 182, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(191, 242, 115, 0.85), rgba(224, 252, 182, 0.85));
 }
 
 .app {
@@ -931,6 +935,23 @@ $breakpoints
 
 .card__breed-bname {
   font-size: 2.5rem;
+}
+
+.litters {
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.litters__container {
+  border: 1px solid red;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.litters__container__image:nth-child(odd) {
+  background: red;
 }
 
 .mainContent {

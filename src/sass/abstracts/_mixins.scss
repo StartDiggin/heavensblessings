@@ -43,6 +43,17 @@
   transform: translateY(-50%);
 }
 
+@mixin u-details {
+  border-radius: 3rem;
+  padding: 4rem;
+  font-size: 1.4rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-3, 0.85),
+    rgba($color-4, 0.85)
+  );
+}
+
 // Media Query Manager
 /*
 - phoneSm - 0 - 400px
