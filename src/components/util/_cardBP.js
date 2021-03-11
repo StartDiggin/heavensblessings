@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CardBP = ({id, name, age, weight, temperment, dob, breed, color, parents, img}) => {
+const CardBP = ({name, weight, temperment, dob, breed, color, parents, img}) => {
 
     return(
 
