@@ -1,6 +1,8 @@
 import React from 'react';
 import CardBP from './util/_cardBP';
 import parents from '../Data/parents';
+import heart from '../Data/heart.svg'
+
 
 
 
@@ -18,7 +20,7 @@ const PlannedLitters = () => {
         <div className="litters u-center-text u-margin-top-3">
             <h1 className="litters__heading heading-page">Planned Litters</h1>
             <div className="litters__container">
-                <div className="litters__container--box">
+                <div className="litters__container--box u-margin-bottom-3 u-margin-top-3">
                     <CardBP 
                         key={parent1.id} 
                         name = {parent1.name}
@@ -32,8 +34,8 @@ const PlannedLitters = () => {
                         img = {parent1.img}
                     />
                 </div>
-                <div className="litters__container--box">Scheduled:</div>
-                <div className="litters__container--box">
+                <div className="litters__container--box1 u-margin-bottom-3 u-margin-top-3">Schdeuled: <img src={heart} alt='heart' /> </div>
+                <div className="litters__container--box u-margin-bottom-3 u-margin-top-3">
                     <CardBP 
                         key={parent2.id} 
                         name = {parent2.name}
@@ -47,7 +49,7 @@ const PlannedLitters = () => {
                         img = {parent2.img}
                     />
                 </div>
-                <div className="litters__container--box">
+                <div className="litters__container--box u-margin-bottom-3">
                     <CardBP 
                         key={parent3.id} 
                         name = {parent3.name}
@@ -61,8 +63,8 @@ const PlannedLitters = () => {
                         img = {parent3.img}
                     />
                 </div>
-                <div className="litters__container--box">Scheduled:</div>
-                <div className="litters__container--box">
+                <div className="litters__container--box u-margin-bottom-3">Scheduled:</div>
+                <div className="litters__container--box u-margin-bottom-3">
                     <CardBP 
                         key={parent4.id} 
                         name = {parent4.name}
