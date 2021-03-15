@@ -34,7 +34,13 @@ const PlannedLitters = () => {
                         img = {parent1.img}
                     />
                 </div>
-                <div className="litters__container--box1 u-margin-bottom-3 u-margin-top-3">Schdeuled: <img src={heart} alt='heart' /> </div>
+                
+                <div className="litters__container--box1">
+                    <img src={heart } alt='heart' />
+                    <h2>xx-xx-xxxx</h2>
+                </div>
+
+
                 <div className="litters__container--box u-margin-bottom-3 u-margin-top-3">
                     <CardBP 
                         key={parent2.id} 
@@ -63,7 +69,10 @@ const PlannedLitters = () => {
                         img = {parent3.img}
                     />
                 </div>
-                <div className="litters__container--box u-margin-bottom-3">Scheduled:</div>
+                <div className="litters__container--box1">
+                    <img src={heart } alt='heart' />
+                    <h2>xx-xx-xxxx</h2>
+                </div>
                 <div className="litters__container--box u-margin-bottom-3">
                     <CardBP 
                         key={parent4.id} 
@@ -92,7 +101,10 @@ const PlannedLitters = () => {
                         img = {parent5.img}
                     />
                 </div>
-                <div className="litters__container--box">Scheduled:</div>
+               <div className="litters__container--box1">
+                    <img src={heart } alt='heart' />
+                    <h2>xx-xx-xxxx</h2>
+                </div>
                 <div className="litters__container--box">
                     <CardBP 
                         key={parent6.id} 

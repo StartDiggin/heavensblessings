@@ -576,8 +576,8 @@ $breakpoints
 .poodles__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  -ms-grid-columns: (minmax(3, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
 }
 
 .poodles__details {
@@ -615,6 +615,78 @@ $breakpoints
 }
 
 .poodles__temper {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  border-radius: 3rem;
+  padding: 4rem;
+  font-size: 1.4rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(191, 242, 115, 0.85)), to(rgba(224, 252, 182, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(191, 242, 115, 0.85), rgba(224, 252, 182, 0.85));
+}
+
+/*
+- phoneSm - 0 - 400px
+- phone   - 401px - 600px
+- tab-port - 600px - 900px
+- tab-land - 901px - 1200px
+- normal styles apply 1201px - 1799px
+- big-desk - 1800px
+
+$breakpoints
+- phoneSm  
+- phone   
+- tab-port  
+- tab-land  
+- big-desk  
+*/
+.aussies {
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.aussies__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(3, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
+}
+
+.aussies__details {
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 3rem;
+  padding: 4rem;
+  font-size: 1.4rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(191, 242, 115, 0.85)), to(rgba(224, 252, 182, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(191, 242, 115, 0.85), rgba(224, 252, 182, 0.85));
+}
+
+.aussies__weight {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  position: relative;
+}
+
+.aussies__image {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.aussies__life {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  position: relative;
+}
+
+.aussies__temper {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
@@ -947,6 +1019,16 @@ $breakpoints
   display: grid;
   -ms-grid-columns: (minmax(10rem, 1fr))[3];
       grid-template-columns: repeat(3, minmax(10rem, 1fr));
+}
+
+.litters__container--box1 {
+  height: 20rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 18rem;
 }
 
 .mainContent {

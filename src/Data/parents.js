@@ -47,7 +47,7 @@ let parents = [
         breed: "Aussiedoodle",
         color: "Merle / Wavy",
         parents: "Pixie & Copper",
-        img: img7
+        img: img11
     },
     {
         id: 3,
@@ -91,7 +91,7 @@ let parents = [
         breed: "Aussiedoodle",
         color: "Merle / Wavy",
         parents: "Pixie & Copper",
-        img: img11
+        img: img7
     }
 ]
 

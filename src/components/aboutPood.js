@@ -1,10 +1,13 @@
 import React from 'react';
 import CardBP from './util/_cardBP';
-import parent from '../Data/parents';
+import parents from '../Data/parents';
 
 
 
 const Poodles = () => {
+    const poodle = parents.filter(parent => parent.id === 2)[0]
+    console.log(poodle)
+
     return(
         <div className="poodles u-center-text u-margin-top-3">
             <h1 className="heading-page">About Poodles</h1>
@@ -15,19 +18,19 @@ const Poodles = () => {
                         <span>The Standard Poodle stands 15 inches and taller (usually 22 inches); males weigh 45 to 70 pounds and females weigh 45 to 60 pounds.</span>
                     </div>
                 </div>
-                {parent.map(pup => <CardBP 
-                    key={pup.id}
-                    id={pup.id}
-                    name = {pup.name}
-                    age = {pup.age}
-                    weight = {pup.weight}
-                    temperment = {pup.temperment}
-                    dob = {pup.dob}
-                    breed = {pup.breed}
-                    color = {pup.color}
-                    parents = {pup.parents}
-                    img = {pup.img}
-                    />)}  
+              <CardBP 
+                    key={poodle.id}
+                    id={poodle.id}
+                    name = {poodle.name}
+                    age = {poodle.age}
+                    weight = {poodle.weight}
+                    temperment = {poodle.temperment}
+                    dob = {poodle.dob}
+                    breed = {poodle.breed}
+                    color = {poodle.color}
+                    parents = {poodle.parents}
+                    img = {poodle.img}
+                    />
                 <div className="poodles__life">
                     <div className="poodles__details">
                         <h3>Life Expectancy:</h3>

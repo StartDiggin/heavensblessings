@@ -3,8 +3,14 @@
   margin: 0 auto;
 
   &__container {
-    // border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(3, minmax(10rem, 1fr));
+
+    &--box1 {
+      height: 20rem;
+      display: grid;
+      justify-content: center;
+      margin-top: 18rem;
+    }
   }
 }
