@@ -21,7 +21,7 @@ import img14 from '../images/img14.jpg';
 import img15 from '../images/img15.jpg';
 import img18 from '../images/img18.jpg';
 import img19 from '../images/img19.jpg';
-import img20 from '../images/img20.jpg';
+import img20 from '../images/img20.jpg'; 
 import img21 from '../images/img21.jpg';
 import img22 from '../images/img22.jpg';
 import img24 from '../images/img24.jpg';

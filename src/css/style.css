@@ -216,6 +216,21 @@ $breakpoints
   opacity: 0;
 }
 
+.contactForm {
+  border: 1px solid red;
+  height: 50rem;
+}
+
+.contactForm__container {
+  border: 1px solid orange;
+  width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
 .content {
   display: -ms-grid;
   display: grid;
