@@ -1,18 +1,65 @@
-import React from 'react';
 import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 
 
 
 const ContactForm = () => {
+  // const {REACT_APP_SERVICE_ID, REACT_APP_USER_ID } = process.env;
+  // const service_id = process.env.REACT_APP_SERVICE_ID ;
+  const service_id = 'service_osvbjng' ;
+  // const template_id = process.env.REACT_APP_TEMPLATE_ID;
+  const template_id = 'template_go61whh';
+  // const user_id = process.env.REACT_APP_USER_ID;
+  const user_id = 'user_CGjFWrOiOxJ1tqJdlpucR';
+
   const {register, errors, handleSubmit, reset} = useForm(); 
 
+  const toastifySuccess = () => {
+    toast('Form sent!', {
+      position: 'bottom-right',
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,  
+      draggable: false,
+      className: 'submit-feedback success',
+      toastId: 'notifyToast'
+    });
+  };
+
   const onSubmit = async(data) => {
-    console.log('Name: ', data.name);
-    console.log('Email: ', data.email);
-    console.log('Subject: ', data.subject);
-    console.log('Message: ', data.message);
-  }
+    // Sent from email 
+    try {
+      const templateParams = {
+        Name: data.name,
+        Email: data.email,
+        Subject: data.subject,
+        Message: data.message
+      };
+
+      await emailjs.send (
+        service_id,
+        template_id,
+        templateParams,
+        user_id
+      
+        // process.env.REACT_APP_SERVICE_ID,
+        // process.env.REACT_APP_TEMPLATE_ID,
+        // templateParams,
+        // process.env.REACT_APP_USER_ID
+       
+        );
+     
+      reset();
+      toastifySuccess();
+    } catch(e) {
+      console.log(e);
+    }
+  };
 
   return (
     <div className="contactForm">
@@ -73,6 +120,7 @@ const ContactForm = () => {
               Submit
             </button>
           </form>
+          <ToastContainer />
         </div>
     </div>
   );
@@ -80,4 +128,3 @@ const ContactForm = () => {
 
 export default ContactForm;
               
-
