@@ -10,11 +10,18 @@ import 'react-toastify/dist/ReactToastify.min.css';
 const ContactForm = () => {
   // const {REACT_APP_SERVICE_ID, REACT_APP_USER_ID } = process.env;
   // const service_id = process.env.REACT_APP_SERVICE_ID ;
-  const service_id = 'service_osvbjng' ;
+  // const service_id = 'service_osvbjng' ;
+  const serviceID = 'service_osvbjng' ;
   // const template_id = process.env.REACT_APP_TEMPLATE_ID;
-  const template_id = 'template_go61whh';
+  // const template_id = 'template_go61whh';
+  const templateID = 'template_go61whh';
   // const user_id = process.env.REACT_APP_USER_ID;
-  const user_id = 'user_CGjFWrOiOxJ1tqJdlpucR';
+  
+  // const user_id = 'user_CGjFWrOiOxJ1tqJdlpucR';
+  const userID = 'user_CGjFWrOiOxJ1tqJdlpucR';
+  // (function(){
+  //   emailjs.init("user_CGjFWrOiOxJ1tqJdlpucR")
+  // })();
 
   const {register, errors, handleSubmit, reset} = useForm(); 
 
@@ -35,23 +42,17 @@ const ContactForm = () => {
     // Sent from email 
     try {
       const templateParams = {
-        Name: data.name,
-        Email: data.email,
-        Subject: data.subject,
-        Message: data.message
+        name: data.name,
+        email: data.email,
+        subject: data.subject,
+        message: data.message
       };
 
-      await emailjs.send (
-        service_id,
-        template_id,
+      await emailjs.send(
+        serviceID,
+        templateID,
         templateParams,
-        user_id
-      
-        // process.env.REACT_APP_SERVICE_ID,
-        // process.env.REACT_APP_TEMPLATE_ID,
-        // templateParams,
-        // process.env.REACT_APP_USER_ID
-       
+        userID
         );
      
       reset();
