@@ -3,25 +3,16 @@ import emailjs from 'emailjs-com';
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import keysJS from '../../Data/emailjs';
 
 
 
 
 const ContactForm = () => {
-  // const {REACT_APP_SERVICE_ID, REACT_APP_USER_ID } = process.env;
-  // const service_id = process.env.REACT_APP_SERVICE_ID ;
-  // const service_id = 'service_osvbjng' ;
-  const serviceID = 'service_osvbjng' ;
-  // const template_id = process.env.REACT_APP_TEMPLATE_ID;
-  // const template_id = 'template_go61whh';
-  const templateID = 'template_go61whh';
-  // const user_id = process.env.REACT_APP_USER_ID;
-  
-  // const user_id = 'user_CGjFWrOiOxJ1tqJdlpucR';
-  const userID = 'user_CGjFWrOiOxJ1tqJdlpucR';
-  // (function(){
-  //   emailjs.init("user_CGjFWrOiOxJ1tqJdlpucR")
-  // })();
+  const serviceID = keysJS[0].id ;
+  const templateID = keysJS[1].id;
+  const userID = keysJS[2].id;
+
 
   const {register, errors, handleSubmit, reset} = useForm(); 
 
