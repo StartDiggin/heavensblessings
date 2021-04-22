@@ -1,13 +1,36 @@
+@import "../abstracts/mixins";
 
-.contactForm{
-    border: 1px solid red;
-    height: 50rem;
+.contactForm {
+  &__container {
+    // width: 90%;
+    margin: 0 auto;
+  }
 
-    &__container{
-        border: 1px solid orange;
-        width: 90%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  &__control {
+    height: 4rem;
+    padding: 1rem;
+    border: 1px solid $color-2;
+    background-color: $color-2-5;
+
+    &--sbj {
+      grid-column: 1 / span 2;
     }
+    &--msg {
+      grid-column: 1 / span 2;
+      height: 10rem;
+    }
+  }
+
+  &__submitBtn {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 3rem;
+  }
 }
