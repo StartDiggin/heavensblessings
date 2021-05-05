@@ -10,13 +10,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-hook-form": "^6.15.5",
-<<<<<<< HEAD
-    "react-scripts": "4.0.1",
-    "react-router-dom": "^5.2.0",
-=======
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
->>>>>>> 3627f3e8517a5f12926e523bc9ff581d96063e51
     "react-toastify": "^7.0.3",
     "web-vitals": "^0.2.4"
   },
